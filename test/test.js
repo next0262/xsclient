@@ -4,7 +4,7 @@
 
 Connection = require('./../lib/xsclient')
 
-var XenServerClient = new Connection('143.248.152.82',49202);
+var XenServerClient = new Connection('IP_ADDR', PORT);
 
 /*
 XenServerClient.loginWithPassword('root','ancl@2014', function(error, sessionRef){
@@ -86,7 +86,7 @@ XenServerClient.loginWithPassword('root', 'ancl@2014', function(error, sessionRe
  */
 
 
-XenServerClient.loginWithPassword('root', 'ANCL@2014', function(error, sessionRef){
+XenServerClient.loginWithPassword('ID', 'PASSWORD', function(error, sessionRef){
     if(error){
         console.log(error);
     } else {
