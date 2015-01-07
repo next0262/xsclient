@@ -7,7 +7,7 @@ Connection = require('./../lib/xsclient')
 var XenServerClient = new Connection('IP_ADDR', PORT);
 
 /*
-XenServerClient.loginWithPassword('root','ancl@2014', function(error, sessionRef){
+XenServerClient.loginWithPassword('ID', 'PASSWORD', function(error, sessionRef){
     if(error) {
         console.log(error);
     } else {
@@ -43,7 +43,7 @@ XenServerClient.loginWithPassword('root','ancl@2014', function(error, sessionRef
 });
 */
 /*
-XenServerClient.logout('OpaqueRef:fba734d0-ad0f-8eec-f5ac-4caf5708fb22', function(error, message){
+XenServerClient.logout('sessionRef', function(error, message){
     if(error) {
         console.log(error);
     } else {
@@ -53,11 +53,11 @@ XenServerClient.logout('OpaqueRef:fba734d0-ad0f-8eec-f5ac-4caf5708fb22', functio
 */
 
 /*
-XenServerClient.loginWithPassword('root', 'ancl@2014', function(error, sessionRef){
+XenServerClient.loginWithPassword('ID', 'PASSWORD', function(error, sessionRef){
     if(error){
         console.log(error);
     } else {
-        XenServerClient.getRecord(sessionRef,'OpaqueRef:a4f64f29-fa77-d347-f3c7-960b4a475e84', function(error, record){
+        XenServerClient.getRecord(sessionRef,'vmRef', function(error, record){
             if(error){
                 console.log(error);
             } else {
@@ -69,12 +69,12 @@ XenServerClient.loginWithPassword('root', 'ancl@2014', function(error, sessionRe
 */
 
 /*
-XenServerClient.loginWithPassword('root', 'ancl@2014', function(error, sessionRef){
+XenServerClient.loginWithPassword('ID', 'PASSWORD', function(error, sessionRef){
     if(error){
         console.log(error);
     } else {
         console.log(sessionRef);
-        XenServerClient.getByUuid(sessionRef,'a9d498fc-dd66-b2a4-ab2e-829c3ffa9924', function(error, vm){
+        XenServerClient.getByUuid(sessionRef,'UUID', function(error, vm){
             if(error){
                 console.log(error);
             } else {
