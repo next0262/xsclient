@@ -1,17 +1,31 @@
 {
   "name": "xsclient",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "XenServer API Client",
+  "main": "./lib/xsclient.js",
+  "directories": {
+    "test": "test"
+  },
   "dependencies": {
-    "xmlrpc": "^1.2.0",
-    "express": "^4.10.7"
+    "xmlrpc": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/next0262/xsclient.git"
+  },
+  "keywords": [
+    "xenserver",
+    "api",
+    "client"
+  ],
+  "author": "wjkim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/next0262/xsclient/issues"
+  },
+  "homepage": "https://github.com/next0262/xsclient"
 }

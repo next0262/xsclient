@@ -2,7 +2,7 @@
  * Created by wjkim on 1/6/15.
  */
 
-Connection = require('./../xsclient')
+Connection = require('./../lib/xsclient')
 
 var XenServerClient = new Connection('143.248.152.82',49202);
 
